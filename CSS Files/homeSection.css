@@ -414,8 +414,7 @@ body {
 
     .container #home {
         position: relative;
-        display: grid
-    ;
+        display: grid;
         grid-template-rows: 8% 94%;
     }
     .container section {
@@ -432,7 +431,7 @@ body {
     .container #home .main-content {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 54% 34% 12%;
+        grid-template-rows: 50dvh 30dvh 12dvh;
         grid-template-areas: 
         "image"
         "txt"
@@ -451,6 +450,7 @@ body {
         height: 100%;
         width: fit-content;
         margin: 0 auto;
+        align-items: start;
     }
     .container #home .main-content .soc-med-con {
         grid-area: link;
@@ -459,7 +459,7 @@ body {
     }
 
     .container #home .main-content .image-con img {
-        height: 100%;
+        height: 94%;
         border-radius: 12px;
     }
     .container #home .main-content .image-con::before {
@@ -467,12 +467,14 @@ body {
         top: -2%;
         left: -6%;
         border-radius: 12px;
+        display: none;
     }
     .container #home .main-content .image-con::after {
         height: 80px;
         left: 72%;
-        top: 84%;
+        top: 82%;
         border-radius: 12px;
+        display: none;
     } 
 
     .container #home .main-content .text-con .text1 {
@@ -509,3 +511,10 @@ body {
         gap: 0px;
     }
 }
+
+@media screen and (max-height: 800px) {
+    .container section {
+        height: fit-content;
+    }
+}
+
