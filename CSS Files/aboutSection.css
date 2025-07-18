@@ -165,9 +165,17 @@
     .container #about .text-con-about .skill-con {
         justify-content: center;
         height: fit-content;
+        gap: 4px;
     }
     .container #about .text-con-about .skill-con i {
         font-size: 24px;
-        width: 44px;
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container #about .text-con-about .text2 {
+        line-height: 34px;
+        margin-block: 8px;
     }
 }
