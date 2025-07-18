@@ -1,0 +1,172 @@
+.container #about {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container #about .dot-image-con {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+}
+
+.container #about .dot-image-con1 {
+    top: 0;
+    right: -400px;
+    rotate: -45deg;
+}
+
+.container #about .dot-image-con2 {
+    top: 100px;
+    left: -400px;
+}
+
+.container #about .dot-image-con3 {
+    bottom: -100px;
+    right: -100px;
+    scale: 1.1;
+    rotate: -15deg;
+}
+
+.container #about .image-con-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container #about .image-con-about img {
+    height: 700px;
+    border-radius: 24px;
+    box-shadow: -24px 24px 0 0 #a1a1a1;
+    border: 5px solid #333333;
+}
+
+.container #about .text-con-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container #about .text-con-about .text1 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.container #about .text-con-about .text2 {
+    font-weight: 700;
+    font-size: 90px;
+}
+
+.container #about .text-con-about .text4 {
+    margin-top: 10dvh;
+    margin-bottom: 1dvh;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.container #about .text-con-about .skill-con {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+}
+
+.container #about .text-con-about .skill-con i {
+    font-size: 40px;
+    background-color: #cccccc;
+    box-shadow: -2px 2px 0 0 #747474;
+    color: #333333;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    aspect-ratio: 1;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1042px) {
+    .container #about .image-con-about img {
+        height: 550px;
+        box-shadow: -12px 12px 0 0 #a1a1a1;
+    }
+    .container #about .text-con-about .text2 {
+        font-size: 70px;
+        line-height: 90px;
+    }
+    .container #about .text-con-about .text3 {
+        font-size: 16px;
+    }
+    .container #about .text-con-about .skill-con i {
+        font-size: 36px;
+        width: 54px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container #about .image-con-about img {
+        height: 450px;
+        box-shadow: -8px 8px 0 0 #a1a1a1;
+    }
+    .container #about .text-con-about .text1 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .container #about .text-con-about .text2 {
+        font-size: 60px;
+        line-height: 64px;
+    }
+    .container #about .text-con-about .text3 {
+        font-size: 14px;
+    }
+    .container #about .text-con-about .skill-con i {
+        font-size: 32px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container #about {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        height: 100dvh;
+    }
+    .container #about .image-con-about {
+        height: 100%;
+    }
+    .container #about .image-con-about img {
+        height: 94%;
+        box-shadow: -4px 4px 0 0 #a1a1a1;
+    }
+    .container #about .text-con-about {
+        height: 100%;
+        justify-content: start;
+        text-align: center;
+    }
+
+    .container #about .text-con-about .text1 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .container #about .text-con-about .text2 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .container #about .text-con-about .text4 {
+        margin-block: 10px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .container #about .text-con-about .skill-con {
+        justify-content: center;
+    }
+    .container #about .text-con-about .skill-con i {
+        font-size: 24px;
+        width: 44px;
+    }
+}

@@ -1,0 +1,41 @@
+@keyframes backToTopBtn-show {
+    from {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes backToTopBtn-hide {
+    from {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes popUpMessage-show {
+    from {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes popUpMessage-hide {
+    from {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(0);
+    }
+}

@@ -1,0 +1,112 @@
+.container #service {
+    display: grid;
+    grid-template-rows: 10% 85%;
+    position: relative;
+}
+
+.container #service .dot-image-con {
+    position: absolute;
+    opacity: 30%;
+    z-index: -1;
+}
+
+.container #service .dot-image-con1 {
+    scale: 0.7;
+    top: 0px;
+    right: -300px;
+}
+
+.container #service .dot-image-con2 {
+    scale: 1.1;
+    bottom: -90px;
+    left: -300px;
+    rotate: -15deg;
+}
+
+.container #service .service-text1 {
+    font-size: 40px;
+    font-weight: 700;
+    align-self: center;
+}
+
+.container #service .service-list-con {
+    display: flex;
+    gap: 24px;
+}
+
+.container #service .service-list-con .service-con {
+    border: 2px solid;
+    height: 100%;
+    padding: 12px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 0 0 #333333;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container #service .service-list-con .service-con img {
+    width: 300px;
+    height: 300px;
+}
+
+.container #service .service-list-con .service-con .service-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container #service .service-list-con .service-con .service-description {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container #service .service-list-con .service-con img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container #service .service-list-con .service-con .service-title {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .container #service .service-list-con .service-con img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container #service {
+        height: fit-content;
+        display: grid;
+        grid-template-rows: 5% 95%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container #service .service-list-con {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .container #service .service-list-con .service-con {
+        height: 100%;
+        box-shadow: 4px 4px 0 0 #333333;
+        gap: 4px;
+    }
+
+    .container #service .service-list-con .service-con img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container #service .service-text1 {
+        font-size: 32px;
+    }
+}

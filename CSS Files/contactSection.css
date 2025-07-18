@@ -1,0 +1,190 @@
+.container #contact {
+    display: grid;
+    grid-template-rows: 20% 70% 100px;
+}
+
+.container #contact .contact-text1 {
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.container #contact .contact-form-con {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.container #contact .contact-form-con .contact-link-con {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container #contact .contact-form-con .contact-link-con .contact-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: larger;
+}
+
+.container #contact .contact-form-con .contact-link-con .contact-item i {
+    width: 5%;
+    font-size: 20px;
+    background-color: #333333;
+    aspect-ratio: 1;
+    width: 50px;
+    border-radius: 50%;
+    color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container #contact .contact-form-con form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    background-color: #333333;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 8px 8px 0 0 #a1a1a1;
+    position: relative;
+    height: fit-content;
+}
+
+.container #contact .contact-form-con form>p {
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.container #contact .contact-form-con form .input-item label {
+    color: #f2f2f2;
+}
+
+.container #contact .contact-form-con form .input-item input {
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.container #contact .contact-form-con form .input-item textarea {
+    margin-top: 10px;
+    width: 100%;
+    resize: none;
+    height: 100px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.container #contact .contact-form-con form button {
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+.container #contact footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+}
+
+.container #contact #pop-up-message {
+    width: 50%;
+    text-align: center;
+    height: 30%;
+    background-color: #a1a1a1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    flex-direction: column;
+    gap: 12px;
+    border: 2px solid #333333;
+    padding: 12px;
+}
+.container #contact #pop-up-message p {
+    font-weight: 500;
+}
+.container #contact #pop-up-message button {
+    width: 30%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #333333;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.container #contact #pop-up-message button:active {
+    transform: scale(0.90);
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .container #contact .contact-text1 {
+        font-size: 70px;
+    }
+    .container #contact .contact-form-con .contact-link-con .contact-item i {
+        font-size: 16px;
+        width: 40px;
+    }
+    .container #contact .contact-form-con .contact-link-con .contact-item p {
+        font-size: 18px;
+    }
+    .container #contact .contact-form-con form>p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container #contact .contact-form-con form button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container #contact {
+        display: grid;
+        grid-template-rows: 10% 80% 10%;
+    }
+    .container #contact .contact-text1 {
+        font-size: 52px;
+    }
+    .container #contact .contact-form-con .contact-link-con {
+        gap: 20px;
+    }
+    .container #contact .contact-form-con {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 28% 72%;
+    }
+    .container #contact .contact-form-con .contact-link-con .contact-item p {
+        font-size: 14px;
+    }
+    .container #contact .contact-form-con form {
+        gap: 20px;
+        background-color: #333333;
+        padding: 24px;
+        border-radius: 24px;
+        box-shadow: 4px 4px 0 0 #a1a1a1;
+        position: relative;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .container #contact .contact-form-con form .input-item {
+        display: flex;
+        flex-direction: column;
+    }
+}
