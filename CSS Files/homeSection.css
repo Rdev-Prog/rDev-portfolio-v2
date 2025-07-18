@@ -415,7 +415,7 @@ body {
     .container #home {
         position: relative;
         display: grid;
-        grid-template-rows: 8% 94%;
+        grid-template-rows: 8dvh 92dvh;
     }
     .container section {
         padding: 12px;
@@ -459,7 +459,7 @@ body {
     }
 
     .container #home .main-content .image-con img {
-        height: 94%;
+        height: 90%;
         border-radius: 12px;
     }
     .container #home .main-content .image-con::before {
