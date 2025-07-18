@@ -137,7 +137,7 @@
         height: 100%;
     }
     .container #about .image-con-about img {
-        height: 94%;
+        height: 90%;
         box-shadow: -4px 4px 0 0 #a1a1a1;
     }
     .container #about .text-con-about {
@@ -164,6 +164,7 @@
 
     .container #about .text-con-about .skill-con {
         justify-content: center;
+        height: fit-content;
     }
     .container #about .text-con-about .skill-con i {
         font-size: 24px;
